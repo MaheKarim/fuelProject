@@ -21,6 +21,10 @@
                 <div class="sb-nav-link-icon"><i class="fas fa-calender"></i></div>
                CarWash Request Service
             </a>
+            <a class="nav-link" href="{{ route('admin.faq') }}">
+                <div class="sb-nav-link-icon"><i class="fas fa-car"></i></div>
+               FAQ Service
+            </a>
 
 
             <div class="sb-sidenav-menu-heading">Interface</div>

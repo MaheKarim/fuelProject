@@ -53,6 +53,13 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'role:superadministr
     Route::delete('/gas-cylinder/delete/{id}', 'Settings\CylinderController@destroy')->name('gasCylinder.delete');
     // Car Wash
     Route::get('/carwash-for', 'CarWashController@index')->name('car-wash-admin');
+    // FAQ Code
+    Route::get('/faq-type', 'FAQController@index')->name('faq');
+    Route::get('/faq-type/create', 'FAQController@create')->name('faq.create');
+    Route::post('/faq-type-store', 'FAQController@store')->name('faq.store');
+    Route::get('/faq-type/edit/{id}', 'FAQController@edit')->name('faq.edit');
+    Route::post('/faq-type/update/{id}', 'FAQController@update')->name('faqUpdate');
+    Route::delete('/faq-type/delete/{id}', 'FAQController@destroy')->name('faq.destroy');
 
 });
 
