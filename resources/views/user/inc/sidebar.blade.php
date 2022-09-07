@@ -20,7 +20,7 @@
                 <div class="sb-nav-link-icon"><i class="fas fa-caravan"></i></div>
                 Car Wash
             </a>
-            <a class="nav-link" href="{{ route('user.carmecs') }}" style="color: white;">
+            <a class="nav-link" href="#" style="color: white;">
                 <div class="sb-nav-link-icon"><i class="fas fa-car-side"></i></div>
                 Car Maintenance
             </a>
