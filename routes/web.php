@@ -60,6 +60,8 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'role:superadministr
     Route::get('/faq-type/edit/{id}', 'FAQController@edit')->name('faq.edit');
     Route::post('/faq-type/update/{id}', 'FAQController@update')->name('faqUpdate');
     Route::delete('/faq-type/delete/{id}', 'FAQController@destroy')->name('faq.destroy');
+    // Feedback See
+    Route::get('/feedback-all', 'AdminFeedbackController@index')->name('feedback.all');
 
 });
 

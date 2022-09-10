@@ -25,6 +25,10 @@
                 <div class="sb-nav-link-icon"><i class="fas fa-car"></i></div>
                FAQ Service
             </a>
+            <a class="nav-link" href="{{ route('admin.feedback.all') }}">
+                <div class="sb-nav-link-icon"><i class="fas fa-car"></i></div>
+               Feedback
+            </a>
 
 
             <div class="sb-sidenav-menu-heading">Interface</div>
