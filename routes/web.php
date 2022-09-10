@@ -74,6 +74,9 @@ Route::name('user.')->prefix('user')->middleware(['auth', 'role:user'])->group(f
     // Car Wash
     Route::get('/car-wash','User\WashController@index')->name('carwash');
     Route::post('/car-wash/store','User\WashController@store')->name('washStore');
+    // Feedback To Admin
+    Route::get('/feedback','User\FeedbackController@index')->name('feedback');
+    Route::post('/feedback/store','User\FeedbackController@store')->name('feedback.store');
     
     Route::get('/car-maintenance','User\ComingSoonController@car_mecs')->name('carmecs');
 });
